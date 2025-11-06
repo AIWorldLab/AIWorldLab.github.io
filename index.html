@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual World Model Research</title>
+    
+    <style>
+        /* --- 1. 全局和基础样式 --- */
+        
+        * {
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* --- 2. 布局容器 --- */
+        
+        .container {
+            max-width: 960px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* --- 3. 头部样式 --- */
+        header {
+            background-color: #ffffff;
+            padding: 2.5rem 2rem;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+        }
+
+        /* 【新增】Logo 样式 */
+        .logo {
+            max-width: 100px;  /* 限制Logo的最大宽度，你可以改成你需要的大小 */
+            height: auto;       /* 保持图片的原始宽高比 */
+            margin-bottom: 15px; /* Logo和下方标题之间的间距 */
+        }
+
+        header h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        header .subtitle {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            margin-top: 10px;
+        }
+
+        /* --- 4. 内容卡片样式 --- */
+        .card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+
+        .card h2 {
+            color: #34495e;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        /* --- 5. 元素样式 --- */
+        p {
+            margin-bottom: 1.25rem;
+        }
+        
+        a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #2980b9;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        /* --- 6. 移动端响应式设计 --- */
+        @media (max-width: 768px) {
+            body {
+                font-size: 16px;
+            }
+
+            .container {
+                margin: 20px auto;
+                padding: 0 15px;
+            }
+
+            header {
+                padding: 2rem 1.5rem;
+            }
+
+            /* 【新增】确保logo在手机上也不会过大 */
+            .logo {
+                max-width: 80px; 
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .card {
+                padding: 20px;
+            }
+
+            .card h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="./static/icon.png" alt="Research Logo" class="logo">
+        
+        <h1>Visual World Model Research</h1>
+        <p class="subtitle">Exploring the Frontiers of AI Perception and Prediction</p>
+    </header>
+
+    <main class="container">
+        
+        <section class="card" id="about">
+            <h2>About Visual World Model</h2>
+            <p>
+                A visual world model is a system that understands and simulates the laws of the physical world through visual observation and conditioned interaction.
+            </p>
+        </section>
+
+        <section class="card" id="focus">
+            <h2>Our Research Focus</h2>
+            <p>Our lab is currently focused on several key challenges within VWMs:</p>
+            <ul>
+                <li><strong>Representing from Observation: The Perceptual Foundation of VWM</strong> </li>
+                <li><strong>Learning the Rules of the World: The Cognitive Core of VWM</strong> </li>
+                <li><strong>Simulating the Future through Interaction: The Key Capability of VWM</strong> </li>
+            </ul>
+        </section>
+
+        <section class="card" id="publications">
+            <h2>Recent Publications</h2>
+            <p>Here are some of our recent contributions to the field. (These are placeholders).</p>
+            <ul>
+                <li><a href="http://visualworldmodel.github.io/survey">A Survey on World Models: A Vision Perspective</a></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Visual World Model Research Group. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
