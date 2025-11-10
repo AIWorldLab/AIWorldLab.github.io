@@ -3,9 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visual World Model Research</title>
+    <title>AI World Lab</title>
     
     <style>
+
+
+
+        /* 容器 */
+        .pub-list {
+        display: grid;
+        gap: 16px;
+        }
+
+        /* 卡片结构 */
+        .paper {
+        display: grid;
+        grid-template-columns: 240px 1fr;
+        gap: 16px;
+        align-items: start;
+        }
+
+        .paper.short {
+        padding: 12px 0;
+        border-bottom: 1px solid rgba(0,0,0,0.08);
+        }
+
+        /* 左侧缩略图 */
+        .sub-left {
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        background: #f5f5f5;
+        }
+
+        .sub-left img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;      /* 保持裁切效果 */
+        aspect-ratio: 24 / 13;  /* 与 240x130 对应，避免 CLS 抖动 */
+        border-radius: 8px;
+        }
+
+        /* 右侧文字 */
+        .sub-right {
+        display: grid;
+        gap: 6px;
+        }
+
+        .paper-title {
+        margin: 0;
+        font-size: 1.05rem;
+        line-height: 1.35;
+        }
+
+        .paper-authors,
+        .paper-meta,
+        .paper-links {
+        margin: 0;
+        font-size: 0.95rem;
+        color: #444;
+        }
+
+        .paper-authors strong { font-weight: 600; }
+
+        .paper-links a {
+        margin-right: 10px;
+        text-decoration: none;
+        border-bottom: 1px dotted currentColor;
+        }
+
+        .paper-links a:hover { border-bottom-style: solid; }
+
+        /* 响应式：小屏改为上下布局 */
+        @media (max-width: 680px) {
+        .paper {
+            grid-template-columns: 1fr;
+        }
+        .sub-left img { aspect-ratio: 16 / 9; }
+        }
+
         /* --- 1. 全局和基础样式 --- */
         
         * {
@@ -44,7 +121,7 @@
         /* 【新增】Logo 样式 */
         .logo {
             max-width: 100px;  /* 限制Logo的最大宽度，你可以改成你需要的大小 */
-            height: auto;       /* 保持图片的原始宽高比 */
+            height: auto;      /* 保持图片的原始宽高比 */
             margin-bottom: 15px; /* Logo和下方标题之间的间距 */
         }
 
@@ -143,47 +220,77 @@
             }
         }
     </style>
+    <link rel="icon" href="./static/icon.png">
 </head>
 <body>
 
     <header>
-        <img src="./static/icon.png" alt="Research Logo" class="logo">
+        <img src="./static/icon.png" alt="AI World Lab Logo" class="logo">
         
-        <h1>Visual World Model Research</h1>
-        <p class="subtitle">Exploring the Frontiers of AI Perception and Prediction</p>
+        <h1>AI World Lab</h1>
+        <p class="subtitle">Exploring World Models through AI Perception and Prediction</p>
     </header>
 
     <main class="container">
         
-        <section class="card" id="about">
-            <h2>About Visual World Model</h2>
+        <!-- <section class="card" id="about">
+            <h2>About Vision World Model</h2>
             <p>
-                A visual world model is a system that understands and simulates the laws of the physical world through visual observation and conditioned interaction.
+                A vision world model is a system that understands and simulates the laws of the physical world through visual observation and conditioned interaction.
             </p>
         </section>
 
         <section class="card" id="focus">
             <h2>Our Research Focus</h2>
-            <p>Our lab is currently focused on several key challenges within VWMs:</p>
+            <p>Our lab is currently focused on several key challenges within World Models (WMs):</p>
             <ul>
-                <li><strong>Representing from Observation: The Perceptual Foundation of VWM</strong> </li>
-                <li><strong>Learning the Rules of the World: The Cognitive Core of VWM</strong> </li>
-                <li><strong>Simulating the Future through Interaction: The Key Capability of VWM</strong> </li>
+                <li><strong>Representing from Observation: The Perceptual Foundation of WM</strong> </li>
+                <li><strong>Learning the Rules of the World: The Cognitive Core of WM</strong> </li>
+                <li><strong>Simulating the Future through Interaction: The Key Capability of WM</strong> </li>
             </ul>
-        </section>
+        </section> -->
 
         <section class="card" id="publications">
-            <h2>Recent Publications</h2>
-            <p>Here are some of our recent contributions to the field. (These are placeholders).</p>
-            <ul>
-                <li><a href="http://visualworldmodel.github.io/survey">A Survey on World Models: A Vision Perspective</a></li>
-            </ul>
+        <h2>Recent Publications</h2>
+        <div class="pub-list">
+
+            <article class="paper short">
+            <div class="sub-left">
+                <img
+                src="static/survey_nail.png"
+                alt="Survey thumbnail"
+                width="240"
+                height="130"
+                loading="lazy"
+                decoding="async"
+                />
+            </div>
+
+            <div class="sub-right">
+                <h3 class="paper-title">
+                A Survey on World Models: A Vision Perspective
+                </h3>
+                <p class="paper-authors">
+                 Xiao Yu, Yichen Zhang, Mingzhang Wang, Shifang Zhao, Weizhe Liu, Yuyang Yin, Zhongwei Ren, Yao Zhao, Jiashi Feng, Shuicheng Yan, Yunchao Wei, Xiaojie Jin
+                </p>
+                <p class="paper-meta">
+                Topic: World Model || 2025.11
+                </p>
+                <p class="paper-links">
+                <a href="https://aiworldlab.github.io/survey/" target="_blank" rel="noopener">[Project]</a>
+                <a href="https://arxiv.org/" target="_blank" rel="noopener">[Paper]</a>
+                <!-- <a href="#" target="_blank" rel="noopener">[Code]</a> -->
+                </p>
+            </div>
+            </article>
+
+        </div>
         </section>
 
     </main>
 
     <footer>
-        <p>&copy; 2025 Visual World Model Research Group. All rights reserved.</p>
+        <p>&copy; 2025 AI World Lab. All rights reserved.</p>
     </footer>
 
 </body>

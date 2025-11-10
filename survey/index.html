@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+
+  <!-- temp style -->
+  <style>
+    .gradient-text {
+  background: linear-gradient(90deg, #ff7e5f, #feb47b, #86a8e7, #91eae4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* 兼容性优化 */
+  font-weight: 600;       /* 可以加粗一点 */
+}
+  </style>
+
+
   <meta charset="utf-8">
   <meta name="description"
         content="This survey provides the first systematic, technology-oriented analysis of VWM.">
-  <meta name="keywords" content="Survey, World Model, Visual World Model">
+  <meta name="keywords" content="Survey, World Model, Vision World Model">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>A Survey on World Models: A Vision Perspective</title>
 
@@ -32,7 +46,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.png">
+  <link rel="icon" href="./static/images/vwm.png">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -50,46 +64,48 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">
-            <img src="../static/icon.png" alt="Logo" style="height:1.5em; vertical-align:-0.42em; margin-right:0em;">
-            A Survey on World Models: A Vision Perspective</h1>
+            <img src="./static/images/vwm.png" alt="Logo" style="height:1.5em; vertical-align:-0.42em; margin-right:0em;">
+            <!-- <span class="gradient-text">A Survey on World Models: A Vision Perspective</span> -->
+             A Survey on World Models: A Vision Perspective
+          </h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://scholar.google.com/citations?user=4UlzraMAAAAJ">Xiao Yu</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://google.com">Yichen Zhang</a><sup>1</sup>,
+              Yichen Zhang<sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://google.com">Mingzhang Wang</a><sup>1</sup>,
+              Mingzhang Wang<sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="http://google.com">Shifang Zhao</a><sup>1</sup>,
+              <a href="https://zzsf11.github.io/">Shifang Zhao</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://google.com">Weizhe Liu</a><sup>1</sup>,
+              <a href="https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&user=UH0fSDwAAAAJ">Weizhe Liu</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://google.com">Yuyang Yin</a><sup>1</sup>,
+              <a href="https://yuyangyin.github.io/">Yuyang Yin</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://google.com">Zhongwei Ren</a><sup>1</sup>,
+              <a href="https://scholar.google.com/citations?user=e5TJm-0AAAAJ&hl=zh-CN&oi=ao">Zhongwei Ren</a><sup>1</sup>,
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://google.com">Yao Zhao</a><sup>1</sup>,
+              <a href="https://scholar.google.com/citations?user=474TbQYAAAAJ&hl=en">Yao Zhao</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://google.com">Jiashi Feng</a><sup></sup>,
+              <a href="https://scholar.google.com/citations?user=Q8iay0gAAAAJ&hl=en&oi=ao">Jiashi Feng</a><sup></sup>,
             </span>
             <span class="author-block">
-              <a href="https://google.com">Shuicheng Yan</a><sup>2</sup>,
+              <a href="https://yanshuicheng.info/">Shuicheng Yan</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="https://google.com">Yunchao Wei</a><sup>1,&#9993;</sup>,
+              <a href="https://weiyc.github.io/">Yunchao Wei</a><sup>1,&#9993;</sup>,
             </span>
             <span class="author-block">
-              <a href="https://google.com">Xiaojie Jin</a><sup>1,&#9993;,†</sup>
+              <a href="https://scholar.google.com/citations?user=OEZ816YAAAAJ&hl=en">Xiaojie Jin</a><sup>1,&#9993;,†</sup>
             </span>
           </div>
 
@@ -107,7 +123,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/25XX.XXXXX"
+                <a href="./static/docs/temp.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -116,70 +132,96 @@
                 </a>
               </span>
               
-              <!-- Code Link. -->
+              <!-- github Link. -->
               <span class="link-block">
-                <a href="https://https://github.com/XiaoYu-1123/Awesome-Visual-World-Model/"
+                <a href="https://github.com/AIWorldLab/Awesome-Vision-World-Model"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Github</span>
+                  <span class="gradient-text">Awesome</span>
                   </a>
               </span>
 
               <!-- techrxiv Link -->
               <span class="link-block">
-                <a href="https://www.xiaohongshu.com/"
+                <a href="https://www.techrxiv.org/"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                    <img src="./static/images/techrxiv1(1).png" alt="RED Icon"></img>
+                    <img src="./static/images/techrxiv.png" alt="T Icon"></img>
                   </span>
                   <span>&nbsp;TechRxiv</span>
                 </a>
               </span>
               
               <!-- X (Twitter) Link -->
-              <!-- <span class="link-block">
+              <span class="link-block">
                 <a href="https://x.com/" 
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                    <img src="./static/images/x(1).png" alt="X Icon"></img>
+                    <img src="./static/images/x.png" alt="X Icon"></img>
                   </span>
-                  <span>&nbsp;X</span>
+                  <span>&nbsp;X (Twitter)</span>
                 </a>
-              </span> -->
+              </span>
 
-              <!-- 小红书 (RED) Link -->
-              <!-- <span class="link-block">
+              <!-- rednote Link -->
+              <span class="link-block">
                 <a href="https://www.xiaohongshu.com/"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                    <img src="./static/images/RedNote.svg" alt="RED Icon"></img>
+                    <img src="./static/images/RedNote.svg" alt="rednote Icon"></img>
                   </span>
                   <span>&nbsp;RedNote</span>
                 </a>
               </span>
-            </div>-->
+            <!-- </div> -->
+
+
+
             <div class="publication-links"> 
 
-              <!-- PDF Link. -->
-              <span class="link-block">
+              <!-- arxiv Link. -->
+
+              <!-- <span class="link-block">
                 <a href="https://arxiv.org/abs/25XX.XXXXX"
-                   class="external-link button is-normal is-rounded is-dark">
+                   class="external-link button is-normal is-rounded is-dark"
+                   title="Coming soon">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv (coming soon)</span>
+                  <span>arXiv</span>
                 </a>
-              </span>
-              <!-- Video Link. -->
+              </span> -->
               <span class="link-block">
+                <a 
+                class="external-link button is-normal is-rounded is-dark"
+                   title="Coming soon">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+             </span>
+
+              <!-- HF Link. -->
+
+              <!-- <span class="link-block">
                 <a href="https://huggingface.co/papers"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <img src="./static/images/huggingface_logo.svg" alt="HF Icon"></img>
                   </span>
-                  <span>&nbsp;Hugging Face (coming soon)</span>
+                  <span>&nbsp;Hugging Face</span>
+                </a>
+              </span> -->
+              <span class="link-block">
+                <a class="external-link button is-normal is-rounded is-dark"
+                    title="Coming soon">
+                  <span class="icon">
+                      <img src="./static/images/huggingface_logo.svg" alt="HF Icon"></img>
+                  </span>
+                  <span>&nbsp;Hugging Face</span>
                 </a>
               </span>
 
@@ -195,16 +237,16 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="./static/images/intro_worldmodel1.png" alt="Intro">
+      <img src="./static/images/teaser.png" alt="Intro">
       <p style="font-size: 16px;">
-        Figure 1: A summary of representative works for VWMs. We categorize existing research into two main aspects: (1) Designs, which
+        <center><strong>Figure 1:</strong> A summary of representative works for Vision World Models.</center>
+         <!-- We categorize existing research into two main aspects: (1) Designs, which
 are grouped into 4 major categories (7 sub-categories), and (2) Datasets/Benchmarks, which are divided into 2 major categories (5
-sub-categories).
+sub-categories). -->
       </p>
     </div>
   </div>
 </section>
-
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -217,18 +259,12 @@ sub-categories).
         <div class="content has-text-justified">
           <p style="font-size: 20px;">
             <font face="Georgia">
-              The ability to understand, simulate, and interact with the physical world through visual observation is fundamental to
-Artificial General Intelligence. Visual world model (VWM), a system that learn to simulate environmental dynamics directly from high
-dimensional visual streams, emerges as a critical paradigm bridging perception, prediction, and decision-making. However, this rapid
-evolution with communities in video generation, reinforcement learning, and predictive architecture develops distinct approaches and
-creates a confusing landscape of conflicting terminologies, non-standardized evaluations and redundant efforts, obscuring what counts
-as progress for the field. This survey provides the first systematic, technology-oriented analysis of VWM by explicitly addressing their
-visual nature as both a central challenge and defining characteristic. We establish a conceptual framework that decomposes VWM into
-three essential components: the perceptual foundation, the cognitive core and the key capability. We then present a
-comprehensive taxonomy of four main technical paradigms analyzed through this framework, and provide an extensive review of the
-evaluation ecosystem across diverse world modeling domains. By linking core concepts to technical implementations and evaluation
-ecosystem, this survey aims to advance VWM from specialized tools toward foundational components for embodied intelligence,
-ultimately enabling artificial systems to truly comprehend and interact with the world.
+              The ability to understand, simulate, and interact with the physical world through visual observation is fundamental to Artificial General Intelligence. 
+Vision world model (VWM), a system that learns to simulate environmental dynamics directly from high-dimensional visual streams, emerges as a critical paradigm.
+However, rapid evolution across fragmented research communities creates a confusing landscape of conflicting terminologies, non-standardized evaluations, and redundant efforts, obscuring progress for the field. 
+We argue that resolving this fragmentation requires a shift from treating vision as a passive input challenge to viewing its <strong>visual nature</strong> as the central design driver.
+This survey provides the first technology-oriented analysis built on this vision-centric principle. We establish a unified framework that decomposes VWM into: <strong>the perceptual foundation</strong>, <strong>the cognitive core</strong>, and <strong>the key capability</strong>. We then present a comprehensive taxonomy of four main technical paradigms and provide an extensive review of the evaluation ecosystem across diverse world modeling domains.
+Finally, we discuss key challenges and future directions, aiming to unify the field and advance VWM toward foundational components for embodied intelligence that can truly comprehend and interact with the world.
             </font>
           </p>
         </div>
@@ -238,33 +274,205 @@ ultimately enabling artificial systems to truly comprehend and interact with the
   </div>
 </section>
 
-<br>
-<br>
-<section class="hero teaser">
+<section class="section">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="./static/images/framework5.png" alt="Framework">
-      <p style="font-size: 16px;">
-        Figure 2: The conceptual framework of VWM. A VWM receives the high-dimensional visual context and interaction conditions (action,
-instruction, etc.) of the physical world, and ultimately performs future simulations for this physical world.
+
+    <div class="content">
+      <h2 class="title is-3">🚀 Motivation: Why a Vision-Centric Survey?</h2>
+
+      <p>
+        Vision offers the richest and most direct connection to the physical world, but it is also the hardest to model. A VWM must learn from high-dimensional, complex visual streams, not tidy, low-dimensional state vectors.
+        Faced with this complexity, the research field has fragmented, with different communities focusing on different parts of the problem:
       </p>
-      <br>
-      <br>
-      <br>
-      <img src="./static/images/taxonomy2.png" alt="Taxonomy">
-      <p style="font-size: 16px;">
-        Figure 3: A taxonomy of VWM designs, organized into 4 primary classes (with 7 sub-classes) along with other architectural approaches.
+
+      <ul>
+        <li>The <strong>video generation</strong> community treats VWMs as controllable synthesizers, prioritizing fidelity and temporal consistency.</li>
+        <li>The <strong>reinforcement learning/robotics</strong> community views them as learned dynamics simulators for sample-efficient planning and sim-to-real transfer.</li>
+        <li><strong>Predictive/JEPA-style</strong> approaches avoid pixel reconstruction, forecasting in representation spaces for downstream task utility.</li>
+      </ul>
+
+      <p>
+        These divergent goals lead to inconsistent terminology and incomparable metrics. Existing surveys, while valuable, still do not solve this fragmentation.
       </p>
-      <br>
-      <br>
-      <br>
-      <img src="./static/images/evaluation.png" alt="Evaluation">
-      <p style="font-size: 16px;">
-        <center>
-          Figure 4: Overview of the evaluation ecosystems of VWMs.
-        </center>
+      <ul>
+        <li><strong>Application-oriented surveys</strong> (e.g., in robotics or autonomous driving) provide depth but lack a systematic analysis of VWM as a standalone technology.</li>
+        <li><strong>Broad conceptual surveys</strong> offer high-level overviews but treat visual input as a passive assumption rather than the active design challenge it is.</li>
+      </ul>
+      
+      <p>
+        To fill these gaps, <strong>we argue</strong> that addressing the field's fragmentation calls for a shift in perspective: treating the visual nature of the world not as a passive input challenge, but as the central design driver for world modeling.
       </p>
     </div>
+
+    <div class="content">
+      <h2 class="title is-3">🧩 Conceptual Framework</h2>
+
+      <p>
+         At its core, a VWM is defined as follows:
+      </p>
+      <blockquote style="background-color: #f5f5f5; border-left: 5px solid #00d1b2; padding: 1.25em 1.5em;">
+         A vision world model is a system that understands and simulates the laws of the physical world through visual observation and conditioned interaction.
+      </blockquote>
+
+      <p>
+        Based on this, we establish a conceptual framework that decomposes VWM into three essential components:
+      </p>
+      
+      <div class="hero-body" style="padding: 1.5rem 0;">
+        <img src="./static/images/framework.png" alt="Conceptual framework of VWM">
+        <p style="font-size: 16px; margin-top: 10px;">
+          <strong>Figure 2:</strong> The conceptual framework of VWM. A VWM receives the high-dimensional visual context and interaction conditions (action, instruction, etc.) of the physical world, and ultimately performs future simulations for this physical world.
+        </p>
+      </div>
+
+      <ul>
+        <li><strong>(1) The Perceptual Foundation:</strong> How visual streams (RGB, depth, point clouds, etc.) are encoded into structured representations.</li>
+        <li><strong>(2) The Cognitive Core:</strong> What "rules of the world" are learned, progressing from spatio-temporal coherence to physical dynamics and causal reasoning.</li>
+        <li><strong>(3) The Key Capability:</strong> How VWM performs controllable simulation conditioned on actions, language, or other interaction prompts.</li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <h2 class="title is-3">🗺️ Taxonomy of VWM Designs</h2>
+      <p>
+        <!-- We present a comprehensive taxonomy, analyzing four major architectural families and their seven sub-classes based on how they model world dynamics: -->
+        <!-- We categorizes the core architectural designs for VWMs into four primary paradigms.  -->
+        We provide an in-depth analysis of
+        VWMs' four major architectural families, applying our three-component framework to compare their
+        underlying mechanisms:
+      </p>
+
+      <div class="hero-body" style="padding: 1.5rem 0;">
+        <img src="./static/images/taxonomy.png" alt="Taxonomy of VWM designs">
+        <p style="font-size: 16px; margin-top: 10px;">
+          <strong>Figure 3:</strong> A taxonomy of VWM designs, organized into 4 primary classes (with 7 sub-classes) along with other architectural approaches.
+        </p>
+      </div>
+
+      <ol>
+        <li>
+          <strong>Sequential Generation</strong>
+          <ul>
+             <li><strong>Autoregressive Transformers:</strong> Model complex visual dynamics as a sequence prediction problem, converting the world into discrete "visual language" tokens.</li>
+             <li><strong>MLLM as VWM Engine:</strong> Leverage the pre-trained knowledge of Multimodal Large Language Models to perform high-level semantic reasoning and symbolic simulation.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Diffusion-based Generation</strong>
+          <ul>
+             <li><strong>Latent Diffusion:</strong> Apply iterative denoising within a compressed latent space to model the next state, enabling high-fidelity synthesis efficiently.</li>
+             <li><strong>Autoregressive Diffusion:</strong> Combine step-by-step autoregressive reasoning with the high-fidelity synthesis of diffusion models to generate each future frame/token sequentially.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Predictive Architectures</strong>
+          <ul>
+             <li><strong>JEPA:</strong> This non-generative paradigm models dynamics in an abstract representation space, predicting features rather than pixels to filter out irrelevant visual details.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>State Transition Models</strong>
+          <ul>
+             <li><strong>Latent State-Space Modeling:</strong> Learn a holistic, global state vector (e.g., RSSM) to capture the comprehensive dynamics of the entire scene, prized for efficiency in model-based RL.</li>
+             <li><strong>Object-Centric Modeling:</strong> Introduce a strong compositional bias by decomposing the world into a set of discrete object representations and modeling their individual dynamics and interactions.</li>
+          </ul>
+        </li>
+      </ol>
+
+      <div class="hero-body" style="padding: 1.5rem 0;">
+        <img src="./static/images/ar.png" alt="Taxonomy of VWM designs">
+        <p style="font-size: 16px; text-align: center;margin-top: 10px;">
+          <strong>Table 1:</strong> Examples of autoregressive Transformer-based VWMs.
+        </p>
+        <img src="./static/images/diffusion.png" alt="Taxonomy of VWM designs">
+        <p style="font-size: 16px; text-align: center;margin-top: 10px;">
+          <strong>Figure 4:</strong> Examples of diffusion-based (latent diffusion, autoregressive diffusion) VWMs.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- <div class="content">
+      <h2 class="title is-3">📊 Evaluation Ecosystem</h2>
+      <p>
+         We provide an extensive review of the evaluation landscape, cataloging metrics and distinguishing between datasets and benchmarks types.
+      </p>
+
+      <div class="hero-body" style="padding: 1.5rem 0;">
+        <img src="./static/images/evaluation.png" alt="Overview of the evaluation ecosystems of VWMs">
+        <p style="font-size: 16px; text-align: center; margin-top: 10px;">
+           <strong>Figure 5:</strong> Overview of the evaluation ecosystems of VWMs.
+        </p>
+      </div>
+
+      <ul>
+         <li><strong>Metrics:</strong> We categorize metrics into four perspectives: <strong>Visual Quality</strong> (e.g., FVD, LPIPS), <strong>Dynamics Prediction</strong> (e.g., ADE/FDE, mIoU), <strong>Task Execution</strong> (e.g., Success Rate, Driving Score), and <strong>Physical Knowledge</strong> (e.g., Violation of Expectation)[cite: 744].</li>
+         <li><strong>Datasets & Benchmarks:</strong> We distinguish between <strong>General-Purpose World Modeling</strong> (for prediction, simulation, physics, and causality) and <strong>Application-Specific World Modeling</strong> (for Embodied AI & Robotics, Autonomous Driving, and Interactive Gaming)[cite: 810, 811].</li>
+      </ul>
+    </div> -->
+
+    <div class="content">
+      <h2 class="title is-3">📊 Evaluation Ecosystem</h2>
+      <p>
+         We provide an extensive review of the evaluation landscape, cataloging metrics and distinguishing between datasets and benchmarks types.
+      </p>
+
+      <div class="hero-body" style="padding: 1.5rem 0;">
+        <img src="./static/images/evaluation.png" alt="Overview of the evaluation ecosystems of VWMs">
+        <p style="font-size: 16px; text-align: center; margin-top: 10px;">
+          <strong>Figure 5:</strong> Overview of the evaluation ecosystems of VWMs.
+        </p>
+      </div>
+
+      <h3 class="title is-4" style="margin-top: 1.5rem;">Metrics</h3>
+      <ul>
+         <li><strong>Visual Quality:</strong> Assesses the fidelity of generated images/videos.</li>
+        <li><strong>Dynamics Prediction:</strong> Evaluates the accuracy of the learned "transition function".</li>
+        <li><strong>Task Execution:</strong> Measures the model's utility in downstream tasks.</li>
+        <li><strong>Physical Knowledge:</strong> Probes the model's understanding of "common sense" physics, such as object permanence and causality.</li>
+      </ul>
+
+      <h3 class="title is-4" style="margin-top: 1.5rem;">Datasets and Benchmarks</h3>
+      <ul>
+        <li>
+           <strong>General-Purpose World Modeling:</strong> Foundational benchmarks designed to evaluate core capabilities:
+          <ul>
+            <li><em>World Prediction and Simulation</em></li>
+            <li><em>Physical and Causal Reasoning</em></li>
+          </ul>
+        </li>
+        <li>
+           <strong>Application-Specific World Modeling:</strong> Datasets and testbeds tailored for high-impact downstream applications:
+          <ul>
+            <li><em>Embodied AI and Robotics</em></li>
+            <li><em>Autonomous Driving</em></li>
+            <li><em>Interactive Environments and Gaming</em></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    
+
+    <div class="content">
+      <h2 class="title is-3">💡 Challenges and Future Directions</h2>
+      <p>
+         We organize our analysis around three interconnected calls to action for the next generation of VWMs:
+      </p>
+
+      <div class="hero-body" style="padding: 1.5rem 0;">
+        <img src="./static/images/discussion.png" alt="Overview of challenges and future directions">
+        <p style="font-size: 16px; text-align: center; margin-top: 10px;">
+           <strong>Figure 6:</strong> Overview of the challenges and future directions for the next generation VWM.
+        </p>
+      </div>
+
+      <ol>
+         <li><strong>Re-grounding:</strong>  We must move beyond superficial imitation to establish robust foundations for deep physical and causal understanding, for example, by integrating physics rules or fusing neural-symbolic reasoning.</li>
+         <li><strong>Re-evaluation:</strong>  We call for a critical re-evaluation of metrics, challenging those that prioritize misleading visual fidelity over true physical plausibility and causal logic.</li>
+         <li><strong>Re-scaling:</strong>  We explore how VWMs can achieve their "GPT-3 moment" not through size alone, but by leveraging new scaling paradigms for reasoning, adaptation, and universal task solving.</li>
+      </ol>
+    </div>
+
   </div>
 </section>
 

@@ -1,1 +1,1 @@
-# Project Page of VWM Survey
+# AI World Lab Homepage
