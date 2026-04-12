@@ -92,7 +92,7 @@
           </h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://xiaoyu-1123.github.io/">Xiao Yu</a><sup>1</sup>,</span>
+              <a href="https://xiaoyu-1123.github.io/">Xiao Yu</a><sup>1,‡</sup>,</span>
             <span class="author-block">
               Yichen Zhang<sup>1</sup>,
             </span>
@@ -115,13 +115,19 @@
 
           <div class="is-size-5 publication-authors">
             <span class="author-block">
+              Ning An<sup>5</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=wFOk3PQAAAAJ&hl=zh-CN">Hao Liu</a><sup>4</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?hl=zh-CN&user=UYlhQS8AAAAJ">Houwen Peng</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
               <a href="https://scholar.google.com/citations?user=lO5VIncAAAAJ&hl=zh-CN&oi=ao">Yao Zhao</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://hengcv.github.io/">Heng Wang</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=wFOk3PQAAAAJ&hl=zh-CN">Hao Liu</a><sup>1</sup>,
+              <a href="https://scholar.google.com/citations?user=HWFvq_wAAAAJ&hl=en">Jianchao Yang</a>,
             </span>
             <span class="author-block">
               <a href="https://scholar.google.com/citations?user=Q8iay0gAAAAJ&hl=en&oi=ao">Jiashi Feng</a><sup>2</sup>,
@@ -129,11 +135,13 @@
             <span class="author-block">
               <a href="https://yanshuicheng.info/">Shuicheng Yan</a><sup>3</sup>,
             </span>
+          </div>
+          <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://weiyc.github.io/">Yunchao Wei</a><sup>1,5,&#9993;</sup>,
+              <a href="https://weiyc.github.io/">Yunchao Wei</a><sup>1,&#9993;</sup>,
             </span>
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=OEZ816YAAAAJ&hl=en">Xiaojie Jin</a><sup>1,&#9993;,†</sup>
+              <a href="https://scholar.google.com/citations?user=OEZ816YAAAAJ&hl=en">Xiaojie Jin</a><sup>1,&#9993;,†,‡</sup>
             </span>
           </div>
 
@@ -142,19 +150,20 @@
             <span class="author-block"><sup>2</sup>Tencent,&nbsp&nbsp&nbsp&nbsp</span>
             <span class="author-block"><sup>3</sup>NUS,&nbsp&nbsp&nbsp&nbsp</span>
             <span class="author-block"><sup>4</sup>Midea,&nbsp&nbsp&nbsp&nbsp</span>
-            <span class="author-block"><sup>5</sup>BAAI</span>
+            <span class="author-block"><sup>5</sup>CCRI</span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>&#9993;</sup>Corresponding author, </span>
-            <span class="author-block"><sup>†</sup>Project Lead</span>
+            <span class="author-block"><sup>&#9993;</sup>Corresponding Author, </span>
+            <span class="author-block"><sup>†</sup>Project Lead, </span>
+            <span class="author-block"><sup>‡</sup>Equal Contribution</span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="./static/docs/preprint-v2026.4.10.pdf"
+                <a href="./static/docs/preprint-v2026.4.12.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -381,7 +390,8 @@ sub-categories). -->
 
       <p>
       where \( v_{0:t} \) represents the sequence of visual observations from time \( 0 \) to \( t \), and \( c_{t} \) represents current conditions (e.g., agent actions, language instructions, or control signals). \( \mathcal{E}( \cdot ) \) denotes the visual encoder that maps raw inputs into representations.
-      \( \mathcal{S}_{t+1:T} \) refers to the representations of future world states, which manifests in diverse ways depending on the specific modeling paradigm, including future observations (\( v_{t+1:T} \)), latent states (\( s_{t+1:T} \)), or other future properties (e.g., segmentation maps, depth, flow, 3D Gaussian splats, or trajectories).
+      <!-- \( \mathcal{S}_{t+1:T} \) refers to the representations of future world states, which manifests in diverse ways depending on the specific modeling paradigm, including future observations (\( v_{t+1:T} \)), latent states (\( s_{t+1:T} \)), or other future properties (e.g., segmentation maps, depth, flow, 3D Gaussian splats, or trajectories). -->
+      \( \mathcal{S}_{t+1:T} \) denotes future world states, which may take different forms depending on the modeling paradigm, including future frames, latent states, or other meaningful attributes (e.g., depth, flow, occupancy, 3D primitives, or trajectories).
       </p>
 
       <p>
