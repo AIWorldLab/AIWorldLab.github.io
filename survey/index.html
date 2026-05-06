@@ -132,9 +132,9 @@
             <span class="author-block">
               <a href="https://scholar.google.com/citations?user=HWFvq_wAAAAJ&hl=en">Jianchao Yang</a>,
             </span>
-            <span class="author-block">
+            <!-- <span class="author-block">
               <a href="https://scholar.google.com/citations?user=Q8iay0gAAAAJ&hl=en&oi=ao">Jiashi Feng</a><sup>2</sup>,
-            </span>
+            </span> -->
             <span class="author-block">
               <a href="https://yanshuicheng.info/">Shuicheng Yan</a><sup>4</sup>,
             </span>
@@ -153,8 +153,15 @@
             <span class="author-block"><sup>2</sup>Tencent,&nbsp&nbsp&nbsp&nbsp</span>
             <span class="author-block"><sup>3</sup>ByteDance,&nbsp&nbsp&nbsp&nbsp</span>
             <span class="author-block"><sup>4</sup>NUS,&nbsp&nbsp&nbsp&nbsp</span>
-            <span class="author-block"><sup>5</sup>Midea,&nbsp&nbsp&nbsp&nbsp</span>
+            <span class="author-block"><sup>5</sup>Midea-AIRC,&nbsp&nbsp&nbsp&nbsp</span>
             <span class="author-block"><sup>6</sup>CCRI</span>
+
+            <!-- <span class="author-block"><sup>1</sup>Beijing Jiaotong University,&nbsp&nbsp&nbsp&nbsp</span>
+            <span class="author-block"><sup>2</sup>Tencent,&nbsp&nbsp&nbsp&nbsp</span>
+            <span class="author-block"><sup>3</sup>ByteDance,&nbsp&nbsp&nbsp&nbsp</span>
+            <span class="author-block"><sup>4</sup>National University of Singapore,&nbsp&nbsp&nbsp&nbsp</span>
+            <span class="author-block"><sup>5</sup>Midea AI Research Center,&nbsp&nbsp&nbsp&nbsp</span>
+            <span class="author-block"><sup>6</sup>Institute of Mining Artificial Intelligence, Chinese Institute of Coal Science</span> -->
           </div>
 
           <div class="is-size-5 publication-authors">
@@ -166,7 +173,7 @@
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
-              <!-- <span class="link-block">
+              <span class="link-block">
                 <a href="https://aiworldlab.github.io/survey/preprint.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -174,19 +181,18 @@
                   </span>
                   <span>Paper</span>
                 </a>
-              </span> -->
+              </span>
 
               <!-- preprint Link -->
-              <span class="link-block">
-                <a 
-                class="external-link button is-normal is-rounded is-dark"
-                   title="Coming soon">
+             <span class="link-block">
+                <a href="https://www.preprints.org/manuscript/202604.2072" 
+                  class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                      <img src="./static/images/preprint.png" alt="X Icon"></img>
+                    <img src="./static/images/preprint.png" alt="X Icon"></img>
                   </span>
-                  <span>Preprints</span>
+                  <span>&nbsp;Preprints</span>
                 </a>
-             </span>
+              </span>
               
               <!-- github Link. -->
               <span class="link-block">
@@ -211,7 +217,7 @@
               </span> -->
               
               <!-- X (Twitter) Link -->
-              <!-- <span class="link-block">
+              <span class="link-block">
                 <a href="https://x.com/" 
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -219,10 +225,10 @@
                   </span>
                   <span>&nbsp;X (Twitter)</span>
                 </a>
-              </span> -->
+              </span>
 
               <!-- rednote Link -->
-              <!-- <span class="link-block">
+              <span class="link-block">
                 <a href="https://www.xiaohongshu.com/"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -230,7 +236,7 @@
                   </span>
                   <span>&nbsp;RedNote</span>
                 </a>
-              </span> -->
+              </span>
             <!-- </div> -->
 
 
@@ -500,24 +506,6 @@ The lower panel highlights its key design choices under the three components of 
 
     </div>
 
-    <!-- <div class="content">
-      <h2 class="title is-3">📊 Evaluation Ecosystem</h2>
-      <p>
-         We provide an extensive review of the evaluation landscape, cataloging metrics and distinguishing between datasets and benchmarks types.
-      </p>
-
-      <div class="hero-body" style="padding: 1.5rem 0;">
-        <img src="./static/images/evaluation.png" alt="Overview of the evaluation ecosystems of VWMs">
-        <p style="font-size: 16px; text-align: center; margin-top: 10px;">
-           <strong>Figure 5:</strong> Overview of the evaluation ecosystems of VWMs.
-        </p>
-      </div>
-
-      <ul>
-         <li><strong>Metrics:</strong> We categorize metrics into four perspectives: <strong>Visual Quality</strong> (e.g., FVD, LPIPS), <strong>Dynamics Prediction</strong> (e.g., ADE/FDE, mIoU), <strong>Task Execution</strong> (e.g., Success Rate, Driving Score), and <strong>Physical Knowledge</strong> (e.g., Violation of Expectation)[cite: 744].</li>
-         <li><strong>Datasets & Benchmarks:</strong> We distinguish between <strong>General-Purpose World Modeling</strong> (for prediction, simulation, physics, and causality) and <strong>Application-Specific World Modeling</strong> (for Embodied AI & Robotics, Autonomous Driving, and Interactive Gaming)[cite: 810, 811].</li>
-      </ul>
-    </div> -->
 
     <div class="content">
       <h2 class="title is-3">📊 Evaluation System</h2>
@@ -614,17 +602,17 @@ The lower panel highlights its key design choices under the three components of 
 </section>
 
 
-<!-- <section class="section" id="BibTeX">
+<section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@XXX{XXX,
-  author    = {},
-  title     = {From Seeing to Knowing the World: A Survey of Vision World Models},
-  journal   = {},
-  year      = {},
+    <pre><code>@article{yu2026seeing,
+  title={From Seeing to Knowing the World: A Survey of Vision World Models},
+  author={Yu, Xiao and Zhang, Yichen and Wang, Mingzhang and Zhao, Shifang and Liu, Weizhe and Yin, Yuyang and Ren, Zhongwei and An, Ning and Wu, Xinglong and Liu, Hao and others},
+  year={2026},
+  publisher={Preprints}
 }</code></pre>
   </div>
-</section> -->
+</section>
 
 
 <footer class="footer">
